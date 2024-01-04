@@ -14,8 +14,8 @@ shared_scripts {
     'Config.lua'
 }
 
---ui_page 'web/dist/index.html'
-ui_page 'http://localhost:3000/' -- Dev
+ui_page 'web/dist/index.html'
+--ui_page 'http://localhost:3000/' -- Dev
 
 files {
     'web/dist/index.html',

@@ -6,7 +6,7 @@ export default createStore({
   state: {
     car: false,
     menu: false,
-    hud: true,
+    hud: false,
     minimap: {
       rightX: 0,
       Y: 0

@@ -1,5 +1,9 @@
 <template>
-    <div class="circles-container">
+    <div class="circles-container" 
+        :style="{ 
+            'left': $store.state.minimap.leftX*100 + 0.2 + '%',
+            'top': $store.state.minimap.Y*100 + 5 + '%'
+        }">
         <v-progress-circular 
             v-for="item in $store.state.statusBars" 
             :color="$store.state.settings[item.status].color"
@@ -43,7 +47,6 @@
 .circles-container {
     padding: 5px;
     position: absolute;
-    bottom: 0;
     display: flex;
     gap: 3px;
 }
